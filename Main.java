@@ -8,24 +8,27 @@ class Main {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter your birth year: ");
     // TODO: Set birth year equal to the input value.
+    birthYear = input.nextInt();
 
     System.out.println("Enter your dog's birth year: ");
     // TODO: Set dogBirthYear equal to the input.
-    
+    dogBirthYear = input.nextInt();
     System.out.println("Enter the current year: ");
     // TODO: Set the currentYear equal to the input.
+    currentYear = input.nextInt();
 
-
-    /* TODO: 
+    /* TODO:
     Implement the algorithms to calculate your 
     age and your dog's age.
     */
-    
+    int humanYear = currentYear - birthYear;
+    int dogYear = (currentYear - birthYear)* 7;
     /* TODO:
     Print your calculations for each age. 
     Remember your out put should be in the form 
     Human: 73 Dog: 63
     */
-    
+    System.out.print("Human age: " + humanYear);
+    System.out.print(" Dog age: " + dogYear);
   }
 }
