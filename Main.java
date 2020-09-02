@@ -22,7 +22,7 @@ class Main {
     age and your dog's age.
     */
     int humanYear = currentYear - birthYear;
-    int dogYear = (currentYear - birthYear)* 7;
+    int dogYear = (currentYear - dogBirthYear)* 7;
     /* TODO:
     Print your calculations for each age. 
     Remember your out put should be in the form 
